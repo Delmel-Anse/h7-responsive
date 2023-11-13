@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    width: 600px;
+    margin: 120px auto 0 auto;
+
+
+}
+body {
+    background-color: #CCCCCC;
+}
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-bottom: 2px solid black;
+    width: 100% ;
+    padding: 20px;
+    background-color: white;
+}
+.type {
+    display: inline-block;
+    width: 100px;
+    border-radius: 5px;
+    color: white;
+    padding: 2px;
+    margin: 2px;
+}
+article {
+    position: relative;
+    border-radius: 5px;
+    background-color: white;
+    margin: 15px;
+    padding: 20px;
+    box-shadow: black 0 4px;
+}
+.grass {
+
+    background-color: #0EB225;
+
+}
+.poison {
+
+    background-color: #580EB2;
+
+}
+.fire {
+
+    background-color: #FF4500;
+
+}
+.flying {
+
+    background-color: #8A42E1;
+}
+.number {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+}
+p img {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+
+}
+@media screen and (max-width: 640px)
+{
+    header {
+        position: initial;
+    }
+    main {
+        width: 100%;
+    }
+    article {
+        margin: 0;
+        border-radius: 0;
+        border: 1px solid #CCCCCC;
+        box-shadow: none;
+    }
+
+}
+@media screen and (max-width: 500px) {
+
+    .type{
+         display: none;
+    }
+    article{
+        min-height: 100px;
+    }
+}
+
